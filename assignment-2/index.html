@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title>Question and Answer</title>
+	<meta charset="utf8">
+</head>
+<body>
+
+<script>
+var name = prompt("What is your name?");
+var help = confirm("A wicked witch has just crashed the elegant ball you have attended this evening, " + name + ". Luckily for you, you are a powerful being. Will you help drive her out or is this task below you?");
+
+if (help) {
+	var gender = prompt("A valiant decision, hero! Now, are you a lady or a gentleman?");
+	gender = gender.toLowerCase();
+	if (gender == "lady" ) {
+		console.log("Very well, Lady " + name + ". The witch certainly envies your beauty.");
+	} else if (gender == "gentleman") {
+		console.log("Very well, Sir " + name + ". The witch certainly admires your striking manliness.");
+	} else {
+		console.log("A mystery vigilante, huh? The witch is certainly taken aback by your mysterious nature.");
+	}
+	var age = prompt("How old are you, hero?");
+	age = Number(age);
+	if (age >= 18) {
+		console.log("You should have no problem defeating the witch with your age and wisdom.");
+	} else if (age < 18) {
+		console.log("Aren't you a prodigy! What a courageous youth, taking on a witch.");
+	} 
+	var weapon = prompt("Will you use brawn or brains to defeat the witch?");
+	
+	if (weapon == "brains") {
+		console.log("A wise choice, hero! The witch challenges you to a test of wits. She will recite to you a riddle. If you answer correctly, her powers will dissolve and she will be forced to leave in shame!");
+	var answer = prompt("The witch riddles you this... It cannot be seen, cannot be felt, Cannot be heard, cannot be smelt. It lies behind stars and under hills, And empty holes it fills. It comes out first and follows after, Ends life, kills laughter. What is it?");
+		if (answer == "dark" || answer == "the dark" || answer == "darkness") {
+		console.log("Well done, hero!! You've answered the witch's riddle correctly, and she must retreat back to the dark lands from whence she came! You've saved the ball, and the King greatly appreciates your valiant act. He awards you with great wealth and high stature in his royal court. Congratulations.");
+		
+	
+		} else {
+		console.log("Oh no! That is incorrect, unfortunately. The witch cackles as she lets loose a spell from her figertips, turning you into a newt. At least you're a very adorable newt, but newts can't do much to stop the witch from wreaking havoc upon the kingdom....");
+	}
+	}	 if (weapon == "brawn") {
+		console.log("A reckless decision, hero... The witch stops you in your tracks before you can even get close with a spell, turning you into a newt. At least you're a very adorable newt, but newts can't do much to stop the witch from wreaking havoc upon the kingdom....");
+}
+	/*switch (catOrDog) {
+		case "dog":
+		case "mongolian deer":
+			console.log("Very Fat Pony.");
+		break;
+		
+		case "cat":
+			console.log("Marmoset.");
+			break;
+			
+			default: 
+				console.log("Chinchilla");
+		} */
+} else {
+	console.log("Well, that's not very nice... If you won't help, then the witch will unleash spells upon the kingdom and make mischief! But, I suppose this task is below you... I hope you get turned into a newt.");
+	
+}
+</script>
+</body>
+</html>
