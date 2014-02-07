@@ -71,24 +71,22 @@
   var children = $(".external");
   
   //5. Find the nearest ancestor <div> to the <aside> tag.
-var nearest = document.getElementById( "aside" );
-$( "aside" )
-  .closest( "div", nearest )
+	var closest = $("div");
   
   //6. Find the first <ul> and change its text color to "green"
   $( "ul:first" ).css( "color", "green");
   
   //7. Find all odd-numbered span tags and hide them
-  
+  $("span:odd").hide();
   
   //8. Find the span with a class of animal, and change its text to read "vegetable"
- 
+ $("span.animal").html("vegetable");
   
   //9. Find all tags with a class of "internal" and remove that class
-  
+  $(".internal").removeClass("internal");
   
   //10. Find all ordered lists on the page, and add the class "finished"
-  var lists = $(".ol");
+  $("ol").addClass(".finished");
   
   
   
