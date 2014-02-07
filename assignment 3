@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Blank Template</title>
+	<meta charset="utf8">
+</head>
+
+<body>
+
+<script src="http://thomaswilburn.net/sccc/data/expenditures.js"></script>
+<script>
+
+var highest = 0;
+for (var i = 0; i < expenditures.length; i++) {
+	var nation = expenditures[i];
+	var amount = Number(nation.amount);
+	if (amount > highest) {
+		highest = amount;
+	}
+}
+var lowest = 100;
+for (var i = 0; i < expenditures.length; i++) {
+	var nation = expenditures[i];
+	var amount = Number(nation.amount);
+	if (amount < lowest) {
+	lowest = amount;
+	}
+}
+
+var total = 0;
+for (var i = 0; i < expenditures.length; i++) {
+	var nation = expenditures[i];
+	var amount = Number(nation.amount);
+	total = total + amount;
+}
+console.log("Average Expenditure: " + total / expenditures.length);
+
+console.log("Highest Expenditure: " + highest);
+console.log("Lowest Expenditure: " + lowest);
+
+
+</script>
+</body>
+</html>
