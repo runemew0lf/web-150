@@ -104,10 +104,10 @@ var isPM = false}
 // list together and answer the question, storing the result in `petTotal`.
 
 var pets = [2, 1, 2, 0, 0, 2];
-var petTotal;
+var petTotal = pets + current;
 for (var i = 0; i < pets.length; i++) {
 	var current = pets[i];
-	petTotal = pets + current;
+	console.log (petTotal);
 }
 
 // 1c. Working with pets again, write another loop that will count the number of
@@ -125,7 +125,7 @@ var youtube = $(".video");
 
 // 2b. Find the tag with an id of "good-parts" and store it in the variable
 // below named `crockford`
-var crockford = $("#good-parts")
+var crockford = $("#good-parts");
 
 
 
@@ -136,9 +136,7 @@ var spans = $("span");
 
 // 2d. Find all the <li> tags inside of the element with a class of "article"
 // and store them in the variable below named `list`
-var list = ("li");
-
-
+	var list = $( "li.article" );
 //3. DOM MANIPULATION
 
 // 3a. Find the element with a class of "redundant" and change its text to "web"
